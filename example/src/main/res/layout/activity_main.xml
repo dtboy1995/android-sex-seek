@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="progress: 0"
+        android:textColor="#d9534f"
+        android:textSize="30sp" />
+
+    <org.ithot.android.view.SeekView
+        android:id="@+id/seek_view"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        app:indicatorRadius="10dp"
+        app:onStep="onStep"
+        app:seekForegroundColor="#8bc34a" />
+
+    <Button
+        android:id="@+id/btn_set_indicator_color"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="SetIndicatorColor"
+        android:text="SetIndicatorColor"
+        android:textColor="#646464"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_set_foreground_color"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="SetForegroundColor"
+        android:text="SetForegroundColor"
+        android:textColor="#646464"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_set_background_color"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="SetBackgroundColor"
+        android:text="SetBackgroundColor"
+        android:textColor="#646464"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_init_pos"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="SetInitPos"
+        android:text="SetInitPos"
+        android:textColor="#646464"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_init_pos_range_map"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="SetInitPosRangeMap"
+        android:text="SetInitPos"
+        android:textColor="#646464"
+        android:textSize="15sp" />
+
+</LinearLayout>

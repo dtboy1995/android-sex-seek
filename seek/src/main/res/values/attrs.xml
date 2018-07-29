@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SeekView">
+
+        <attr name="indicatorRadius" format="dimension|reference" />
+        <attr name="indicatorColor" format="color|reference" />
+        <attr name="indicatorShadowEnable" format="boolean" />
+        <attr name="indicatorShadowRadius" format="dimension|reference" />
+        <attr name="indicatorShadowColor" format="color|reference" />
+
+        <attr name="seekHeight" format="dimension|reference" />
+        <attr name="seekBackgroundColor" format="color|reference" />
+        <attr name="seekForegroundColor" format="color|reference" />
+        <attr name="seekShadowEnable" format="boolean" />
+        <attr name="seekShadowColor" format="color|reference" />
+        <attr name="seekShadowRadius" format="dimension|reference" />
+
+        <attr name="touchEnable" format="boolean" />
+        <attr name="onStep" format="string" />
+
+    </declare-styleable>
+</resources>

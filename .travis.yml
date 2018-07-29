@@ -1,0 +1,22 @@
+language: android
+
+jdk:
+- oraclejdk8
+
+script:
+- ./gradlew assembleRelease --stacktrace
+
+android:
+  components:
+  - tools
+  - platform-tools
+  - build-tools-26.0.2
+  - android-26
+  - extra-android-m2respository
+
+sudo: required
+
+install: true
+
+before_script:
+- chmod +x gradlew
