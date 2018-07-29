@@ -6,6 +6,7 @@ jdk:
 script:
 - ./gradlew assembleRelease --stacktrace
 
+
 android:
   components:
   - tools
