@@ -172,7 +172,6 @@ public class SeekView extends View {
     public void init(int progress, int min, int max) {
         float unit = (max - min) / SeekView.MAX_PROGRESS;
         this.progress = (int) ((progress - min) / unit);
-        debug(this.progress);
         setupCoordinate();
         invalidate();
     }
