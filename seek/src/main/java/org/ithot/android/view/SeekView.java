@@ -160,7 +160,7 @@ public class SeekView extends View {
     }
 
     private boolean inBoundary(float ex) {
-        return ex >= seekStartX && ex <= seekBackgroundEndX;
+        return ex >= seekStartX - seekShadowRadius / 2 && ex <= seekBackgroundEndX + seekShadowRadius / 2;
     }
 
     public void init(int progress) {
