@@ -4,6 +4,8 @@
 :rocket: the most concise android seekview
 
 # install
+
+### jitpack
 - add to your project gradle file
 
 ```gradle
@@ -15,6 +17,12 @@ repositories {
 
 ```gradle
 implementation 'com.github.dtboy1995:android-sex-seek:0.0.1'
+```
+
+### jcenter
+
+```gradle
+implementation 'org.ithot.android.view:seek:0.0.1'
 ```
 
 # snapshot
