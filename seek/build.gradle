@@ -1,7 +1,17 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.novoda.bintray-release'
 
-group='org.ithot'
+group = 'org.ithot'
+
+publish {
+    userOrg = "dtboy"
+    groupId = "org.ithot.android.view"
+    artifactId = "seek"
+    publishVersion = "0.0.1"
+    desc = "the most concise android seekview"
+    website = "https://github.com/dtboy1995/android-sex-seek"
+}
 
 android {
     compileSdkVersion 26
