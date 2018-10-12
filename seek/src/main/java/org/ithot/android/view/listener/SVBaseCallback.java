@@ -9,4 +9,14 @@ public abstract class SVBaseCallback implements ISVCallback {
         int $progress = calRange(_progress);
         step($progress);
     }
+
+    @Override
+    public void start() {
+
+    }
+
+    @Override
+    public void end() {
+
+    }
 }

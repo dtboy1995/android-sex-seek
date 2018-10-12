@@ -8,19 +8,19 @@ publish {
     userOrg = "dtboy"
     groupId = "org.ithot.android.view"
     artifactId = "seek"
-    publishVersion = "0.0.1"
+    publishVersion = "0.1.0"
     desc = "the most concise android seekview"
     website = "https://github.com/dtboy1995/android-sex-seek"
 }
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
-        versionName "0.0.1"
+        versionName "0.1.0"
 
     }
 

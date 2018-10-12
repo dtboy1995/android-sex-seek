@@ -179,6 +179,11 @@ public class SeekView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         float ex = event.getX();
+        if (event.getActionMasked() == MotionEvent.ACTION_DOWN) {
+            if (callback != null) {
+                callback.start();
+            }
+        }
         if (!inBoundary(ex)) return true;
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
@@ -194,10 +199,16 @@ public class SeekView extends View {
                 break;
             case MotionEvent.ACTION_CANCEL:
                 moveIndicatorAndForeground(ex);
+                if (callback != null) {
+                    callback.end();
+                }
                 handler.removeCallbacks(runnable);
                 break;
             case MotionEvent.ACTION_UP:
                 moveIndicatorAndForeground(ex);
+                if (callback != null) {
+                    callback.end();
+                }
                 if (unPerformLongClick) {
                     performClick();
                 }

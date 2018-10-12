@@ -5,10 +5,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.ithot.android.view.SeekView;
-import org.ithot.android.view.listener.ISVCallback;
-import org.ithot.android.view.listener.SVCallback;
 import org.ithot.android.view.listener.SVRangeMapCallback;
 
 public class ExampleActivity extends Activity {
@@ -30,6 +29,24 @@ public class ExampleActivity extends Activity {
             }
         });
         */
+        seekView.setSVCallback(new SVRangeMapCallback(-20, 30) {
+            @Override
+            public void step(int progress) {
+                tvInfo.setText("progress:" + progress);
+            }
+
+            @Override
+            public void start() {
+                Toast.makeText(ExampleActivity.this, "start", Toast.LENGTH_SHORT).show();
+                // touch start
+            }
+
+            @Override
+            public void end() {
+                Toast.makeText(ExampleActivity.this, "end", Toast.LENGTH_SHORT).show();
+                // touch end
+            }
+        });
     }
 
     public void SetIndicatorColor(View v) {
