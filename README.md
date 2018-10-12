@@ -5,7 +5,7 @@
 
 # install
 ```gradle
-implementation 'org.ithot.android.view:seek:0.0.1'
+implementation 'org.ithot.android.view:seek:0.1.0'
 ```
 
 # snapshot
@@ -49,6 +49,8 @@ sv.setSVCallback(new SVCallback() {
     public void step(int progress) {
 
     }
+    // start() touch start
+    // end() touch end
 });
 // set range mapped callback
 sv.setSVCallback(new SVRangeMapCallback(-20, 30) {
@@ -57,6 +59,8 @@ sv.setSVCallback(new SVRangeMapCallback(-20, 30) {
     public void step(int progress) {
 
     }
+    // start() touch start
+    // end() touch end
 });
 ```
 
